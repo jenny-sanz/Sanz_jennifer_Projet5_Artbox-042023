@@ -15,16 +15,16 @@
     
     <main>
         <div id="liste-oeuvres">
+
             <!-- j'inclu mon tableau de toutes les oeuvres -->
             <?php include_once('oeuvres.php');?>   
 
             <!-- j'insère ma boucle qui me permet de lire mon tableau de toutes les oeuvres
                 - $oeuvres = le nom de mon tableau ;
-                - $key = c'est le numéro de mes oeuvres par defaut (de 0 à 14);
+                - $key = c'est le numéro de mes oeuvres 
                 - $value: les differentes valeurs attribuées a chaque oeuvre    -->
             <?php
                  foreach ($oeuvres as $key => $value)
-                
              {
                       echo '<article class="oeuvre">';
                           echo '<a href="oeuvre_details.php?oeuvre='.$key.'">'; 
