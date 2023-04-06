@@ -16,23 +16,34 @@
 <main>
     <?php include_once('oeuvres.php')?>
 
-    <!-- recuperer mes parametres pour afficher le details de chaque oeuvre : 
-         - int (definit que ma variable id oeuvre est un chiffre entier); 
-         - $_GET est la variable utilisé pour récupérer l'info de mon identifiant dans mon lien envoyant vers cette page-->
-    <?php (int)$idoeuvre = $_GET['oeuvre']?>  
-
-    <article id="detail-oeuvre">
-        <div id="img-oeuvre">
-            <img src="<?php echo $oeuvres[$idoeuvre]['image'];?>" alt="<?php echo $oeuvres[$idoeuvre]['title'];?>">
-        </div>
-        <div id="contenu-oeuvre">
-            <h1><?php echo $oeuvres[$idoeuvre]['title'];?></h1>
-            <p class="description"><?php echo $oeuvres[$idoeuvre]['author'];?></p>
-            <p class="description-complete">
-            <?php echo $oeuvres[$idoeuvre]['description'];?>
-            </p>
-        </div>
-    </article>
+  <!-- recuperer mes parametres pour afficher le details de chaque oeuvre , Si le paramètre "oeuvre" est présent, alors la variable $idoeuvre est initialisée avec sa valeur:
+         - $_GET est la variable superglobale utilisée pour récupérer l'info de mon identifiant dans mon lien envoyant vers cette page
+         - le mot clé isset =  vérifie si l'identifiant de l'œuvre est présent dans l'URL;
+         - int (converti la valeur de l'ID (oeuvre)en chiffre entier pour securiser); 
+          -->
+    <?php 
+        if (isset($_GET['oeuvre'])) { 
+            $idoeuvre = (int)$_GET['oeuvre'];
+            if (array_key_exists($idoeuvre, $oeuvres)) {
+    ?>
+            <article id="detail-oeuvre">
+                <div id="img-oeuvre">
+                    <img src="<?php echo $oeuvres[$idoeuvre]['image'];?>" alt="<?php echo $oeuvres[$idoeuvre]['title'];?>">
+                </div>
+                <div id="contenu-oeuvre">
+                    <h1><?php echo $oeuvres[$idoeuvre]['title'];?></h1>
+                    <p class="description"><?php echo $oeuvres[$idoeuvre]['author'];?></p>
+                    <p class="description-complete">
+                        <?php echo $oeuvres[$idoeuvre]['description'];?>
+                    </p>
+                </div>
+            </article>
+<?php 
+        } else {
+            echo "ID d'oeuvre invalide.";
+        }
+    }
+?>
 </main>
 
   <!-- j'inclu mon footer avec ma fonction "include" en php -->
