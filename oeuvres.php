@@ -123,7 +123,5 @@ $oeuvres = [
         'description' => 'Curabitur dui odio, porta vel tempor sed, consectetur vitae mi. Interdum et malesuada fames ac ante ipsum primis in faucibus. Orci varius natoque penatibus nec.',
     ],
 ];
-
-//    print_r($oeuvres[12]);
-  
-
+ //  print_r($oeuvres);
+?>

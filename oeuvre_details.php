@@ -23,23 +23,25 @@
           -->
     <?php 
         if (isset($_GET['oeuvre'])) { 
-            $idoeuvre = (int)$_GET['oeuvre'];
-            if (array_key_exists($idoeuvre, $oeuvres)) {
+            $key = (int)$_GET['oeuvre'];
+            if (array_key_exists($key, $oeuvres)) 
+            {
     ?>
             <article id="detail-oeuvre">
                 <div id="img-oeuvre">
-                    <img src="<?php echo $oeuvres[$idoeuvre]['image'];?>" alt="<?php echo $oeuvres[$idoeuvre]['title'];?>">
+                    <img src="<?php echo $oeuvres[$key]['image'];?>" alt="<?php echo $oeuvres[$key]['title'];?>">
                 </div>
                 <div id="contenu-oeuvre">
-                    <h1><?php echo $oeuvres[$idoeuvre]['title'];?></h1>
-                    <p class="description"><?php echo $oeuvres[$idoeuvre]['author'];?></p>
+                    <h1><?php echo $oeuvres[$key]['title'];?></h1>
+                    <p class="description"><?php echo $oeuvres[$key]['author'];?></p>
                     <p class="description-complete">
-                        <?php echo $oeuvres[$idoeuvre]['description'];?>
+                        <?php echo $oeuvres[$key]['description'];?>
                     </p>
                 </div>
             </article>
 <?php 
-        } else {
+            } 
+        else {
             echo "ID d'oeuvre invalide.";
         }
     }

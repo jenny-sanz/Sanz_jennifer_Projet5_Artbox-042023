@@ -29,8 +29,8 @@
                       echo '<article class="oeuvre">';
                           echo '<a href="oeuvre_details.php?oeuvre='.$key.'">'; 
                                 /* - le ? sépare le nom de la page des paramètres; 
-                                    - oeuvre = correspond au nom de mon parametre à identifier et 
-                                    - .$key correspond à ma clé de l'oeuvre (son numéro dans mon tableau)
+                                    - oeuvre = nom de la variable utilisée pour stocker l'identifiant de l'oeuvre
+                                    - .$key est la valeur de l'identifiant
                                 */
                               echo '<img src="'.$value['image'].'" alt="'.$value['title'].'">';
                               echo '<h2>'.$value['title'].'</h2>';
