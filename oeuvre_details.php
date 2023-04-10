@@ -22,7 +22,7 @@
          - int (converti la valeur de l'ID (oeuvre)en chiffre entier pour securiser); 
           -->
     <?php 
-        if (isset($_GET['oeuvre'])) { 
+        if (isset($_GET['oeuvre']) ) { 
             $key = (int)$_GET['oeuvre'];
             if (array_key_exists($key, $oeuvres)) 
             {

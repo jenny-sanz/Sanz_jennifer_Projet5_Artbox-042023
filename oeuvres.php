@@ -5,14 +5,12 @@
 $oeuvres = [ 
     1=>[
         //tableau associatif qui contient tous les éléments de l'oeuvre
-        'id' => 1,
         'image' => 'img/clark-van-der-beken.png',
         'title' => 'Dodomu',
         'author' => 'Mia Tozerski',
         'description' => 'Mia Tozerski est une artiste peintre ukrainienne réfugiée de la guerre. Sur cette œuvre, Dodomu ("domicile" en ukrainien), elle nous montre la tristesse du peuple ukrainien qu\'elle partage, ayant elle-même dû quitter son foyer. L\'œuvre évoque le drapeau liquéfié d\'une Ukraine en souffrance, pleurant la mort de ses compatriotes. Ce travail chargé d\'émotion est le symbole d\'un événement qui marquera l\'Histoire. Cette peinture à l\'acrylique rayonne grâce à son fond lisse et ses mélanges de couleurs éclatantes.',
     ],
     2=>[
-        'id' => 2,
         'image' => 'img/pawel-czerwinski-3.png',
         'title' => 'Aashaaheen Baadal',
         'author' => 'Anaisha Devi',
@@ -20,7 +18,6 @@ $oeuvres = [
     ],
 
     3=>[
-        'id' => 3,
         'image' => 'img/dan-cristian-padure.png',
         'title' => 'Nightlife Traffic',
         'author' => 'Andrew Forsythe',
@@ -28,7 +25,6 @@ $oeuvres = [
     ],
 
     4=>[
-        'id' => 4,
         'image' => 'img/steve-johnson-5.png',
         'title' => 'Le refuge de l\'Havre',
         'author' => 'imon Pelletier',
@@ -36,7 +32,6 @@ $oeuvres = [
     ],
 
     5=>[
-        'id' => 5,
         'image' => 'img/steve-johnson.png',
         'title' => 'Red Washover',
         'author' => 'Kit Van Der Borght',
@@ -44,7 +39,6 @@ $oeuvres = [
     ],
 
     6=>[
-        'id' => 6,
         'image' => 'img/pawel-czerwinski.png',
         'title' => 'Chromatics',
         'author' => 'Jean-Michel Delatronchette',
@@ -52,7 +46,6 @@ $oeuvres = [
     ],
 
     7=>[
-        'id' => 7,
         'image' => 'img/jazmin-quaynor.png',
         'title' => 'Digital Negative',
         'author' => 'Hamish McKee',
@@ -60,7 +53,6 @@ $oeuvres = [
     ],
 
     8=>[
-        'id' => 8,
         'image' => 'img/steve-johnson-6.png',
         'title' => 'Blast from the past',
         'author' => 'Juliette Baskerville',
@@ -68,7 +60,6 @@ $oeuvres = [
     ],
 
     9=>[
-        'id' => 9,
         'image' => 'img/victor-grabarczyk.png',
         'title' => 'Hurricane',
         'author' => 'Juliette Baskerville',
@@ -76,7 +67,6 @@ $oeuvres = [
     ],
 
     10=>[
-        'id' => 10,
         'image' => 'img/pawel-czerwinski-2.png',
         'title' => 'La marée rouge',
         'author' => 'Martin Rodriguez',
@@ -84,7 +74,6 @@ $oeuvres = [
     ],
 
     11=>[
-        'id' => 11,
         'image' => 'img/steve-johnson-2.png',
         'title' => 'Asimilacion',
         'author' => 'Angel Sanchez-Fernandez',
@@ -100,7 +89,6 @@ $oeuvres = [
     ],
 
     13=>[
-        'id' => 13,
         'image' => 'img/orfeas-green.png',
         'title' => 'Puffy Amalgamate',
         'author' => 'Sandro De Blasi',
@@ -108,7 +96,7 @@ $oeuvres = [
     ],
 
     14=>[
-        'id' => 14,
+
         'image' => 'img/steve-johnson-4.png',
         'title' => 'Mirage',
         'author' => 'Stéphanie Kaiser',
@@ -116,7 +104,6 @@ $oeuvres = [
     ],
 
     15=>[
-        'id' => 15,
         'image' => 'img/steve-johnson-3.png',
         'title' => 'Blaue Gelbe Muster',
         'author' => 'Adelheid Von Schreiber',
